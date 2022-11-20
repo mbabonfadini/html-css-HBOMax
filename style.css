@@ -1,93 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+:root {
+    --font-standart:'Inter';
+    --white-standart: #FFFFFF}
+
 body {
     margin-left: 94px;
-    background-color: #0F0F0F;
-    text-align: center;
-    color: white;
-}
-header {
-    margin-top: 25px;
-}
+    background-image: url("img/background.png");
+    background-color: black;
+    color: white;}
 
-.headerList{
-    list-style-type: none;
-    text-align: center;
-    margin-right: 35px;
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    margin-top: 35px;
+    align-items: center;}
 
+.headerIcon i {
+    padding: 0rem;
+    width: 35%;}
 
-}
-.headerLink {
+.headerImg {
+    text-align: center;}
+
+.headerList {
+    text-align: right;
+    margin-right: 3rem;}
+
+.headerList ul li {
+    display: inline-block;    }
+
+.headerList ul li a {
+    font-family: var(--font-standart);
+    color: var(--white-standart);
     text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 29px;
-    line-height: 35px;
-    text-align: center;
-    color: #FFFFFF;
+    font-size: 20px;
+    padding-right: 2rem;}
 
-    
-}
-form {
-    margin-top: 23px;
-    text-align: center;
-}
+.login {
+    text-align: center ;
+    margin-top: 5em;}
 
-
-.loginHBOButton {
-    background: #8C77E0;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    padding: 10px 35px 10px 35px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
+.loginForm label {
+    font-family: var(--font-standart);
     font-size: 25px;
-    color: #000000;
-    width: 135px;
-    margin-top: 20px;
-        
-}
+    margin-right: 19%;}
 
-label {
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 33px;
-    line-height: 38px;
-    align-items: center;
-    color: #FFFFFF;
-    text-align: left;
-    display: block;
-    margin-left: 450px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-input {
-    width: 400px;
-    height: 33px;
-    background: #7F7F7F;
-    border-radius: 25px;  
-    margin-top: 0px;  
-}
-
-.buttonHost {
-    background: #8C77E0;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.loginForm input {
     border-radius: 25px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
+    border-style: none;
+    background-color:#7f7f7fbf;
+    color: var(--white-standart);
+    font-family: var(--font-standart);
     font-size: 25px;
-    line-height: 38px;
-    color: #000000;
-}
+    margin-bottom: 1.5%;
+    padding: 0.25em 0em 0.25em 1em;}
 
-.footerP {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+.loginButton {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0,0.25);
+    background:linear-gradient(90deg,#A18CD1 0%,#FBC2EB 100%);
+    padding: 0.5em 3em 0.5em 3em;
+    font-family: var(--font-standart);
+    font-size: 20px;}
+
+.footer{
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;}
+
+.footerP{
+    margin-bottom: 2em}
+
+.buttonHost{
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0,0.25);
+    background:linear-gradient(90deg,#A18CD1 0%,#FBC2EB 100%);
+    padding: 0.5em 3em 0.5em 3em;
+    font-family: var(--font-standart);
+    font-size: 20px; 
+    color: #121111;
+    text-decoration: none;  }
