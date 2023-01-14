@@ -8,6 +8,7 @@ body {
     margin-left: 94px;
     background-image: url("img/background.png");
     background-color: black;
+    background-size: 100%;
     color: white;}
 
 .header {
